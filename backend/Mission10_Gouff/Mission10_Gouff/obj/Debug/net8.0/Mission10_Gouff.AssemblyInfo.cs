@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission10_Gouff")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+712c2e287a1f919279818699e023facb508fe36b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission10_Gouff")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission10_Gouff")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

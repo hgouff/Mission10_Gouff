@@ -1,23 +1,26 @@
+
+// Import necessary hooks from React
 import { useEffect, useState } from "react";
 import {Bowler} from "./types/Bowler"
 
-
+// Functional component for displaying the list of bowlers
 function BowlerList () {
 
     const [bowlers, setBowlers] = useState <Bowler[]>([]);
 
+    // useEffect hook runs when the component mounts
     useEffect(() => {
         const fetchBowler = async () =>{
-        const response = await fetch('https://localhost:5000/api/Bowlers');
+        const response = await fetch('https://localhost:5000/api/Bowlers'); // Fetches data from the backend API
         const data = await response.json();
         setBowlers(data);
     };
-    fetchBowler();
+    fetchBowler(); // Calls the function to fetch data
     
     },[]);
 
     
-
+// Renders the table with bowler data
     return (
         <>
         <h2>Bowlers</h2>

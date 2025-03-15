@@ -6,6 +6,8 @@ namespace Mission10_Gouff.Models;
 
 public partial class Bowler
 {
+    //make BowlerID the primary Key
+    //Question mark to allow null values
     [Key]
     [Required]
     public int BowlerID { get; set; }

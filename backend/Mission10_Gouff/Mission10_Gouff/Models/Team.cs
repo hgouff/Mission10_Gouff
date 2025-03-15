@@ -6,6 +6,8 @@ namespace Mission10_Gouff.Models;
 
 public partial class Team
 {
+    //make TeamID the primary key
+    //Question marks for null values
     [Key]
     [Required]
     public int TeamID { get; set; }

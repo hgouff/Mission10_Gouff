@@ -1,3 +1,5 @@
+// Defines a TypeScript type called 'Bowler
+
 export type Bowler = {
     id: number;
     bowlerName: string;

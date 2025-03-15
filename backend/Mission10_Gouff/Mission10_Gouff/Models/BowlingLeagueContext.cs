@@ -4,17 +4,20 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Mission10_Gouff.Models;
 
+// Bowling league context inherits from Db Context
 public partial class BowlingLeagueContext : DbContext
 {
     public BowlingLeagueContext()
     {
     }
 
+    // Constructor that initializes the BowlingLeagueContext with the provided options.
     public BowlingLeagueContext(DbContextOptions<BowlingLeagueContext> options)
         : base(options)
     {
     }
 
+    //Use the bowlers table
     public virtual DbSet<Bowler> Bowlers { get; set; }
 
     public DbSet<Team> Teams { get; set; }
@@ -45,6 +48,7 @@ public partial class BowlingLeagueContext : DbContext
             entity.HasOne(d => d.Team).WithMany(p => p.Bowlers).HasForeignKey(d => d.TeamID);
         });
 
+        //use the teams table
         modelBuilder.Entity<Team>(entity =>
         {
             entity.HasIndex(e => e.TeamID, "TeamID").IsUnique();
